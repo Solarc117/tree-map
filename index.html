@@ -7,19 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tree Map</title>
   </head>
-  <body>
+  <body class="flex-columns">
     <header>
-      <h1>Header</h1>
+      <h1>Movie Treemap</h1>
     </header>
 
-    <div class="main-content flex-grow flex-column">
-      <h2 class="center-text">Figure title</h2>
-      <figure class="flex-grow flex-column">
-        <svg class="canvas" width="1200px" height="600px">
-          <!-- d3 -->
-        </svg>
-        <figcaption class="center-text">Figure desc, and/or ctrls</figcaption>
-      </figure>
+    <div class="main-content flex-grow flex-columns">
+      <h2 class="center-text">94 Best-selling Movies, Grouped by Category</h2>
+      <svg class="canvas" width="1200px" height="600px">
+        <div class="tooltip">Hover to display revenue.</div>
+        <!-- d3 -->
+      </svg>
     </div>
 
     <footer class="center-text">
@@ -35,6 +33,7 @@
       >. Global
       <a rel="noreferrer" target="_blank" href="https://github.com/d3">d3</a>.
     </footer>
+
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="script.js"></script>
   </body>
